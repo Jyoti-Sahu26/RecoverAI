@@ -1,116 +1,335 @@
-# RecoverAI - AI-Powered Predictive Recovery Monitoring Platform
+# 🏥 RecoverAI – AI-Powered Predictive Recovery Monitoring Platform
 
-RecoverAI has been expanded from symptom logging into a product-style recovery monitoring platform with patient, caregiver, doctor, and admin workflows.
+> **RecoverAI** is an AI-powered healthcare platform designed to support patients throughout their recovery journey using predictive analytics, intelligent health monitoring, and personalized recovery recommendations. The platform enables seamless collaboration between patients, caregivers, doctors, and administrators while promoting proactive and data-driven healthcare.
 
-## Major modules added
+---
 
-- AI Recovery Assistant with patient context, risk context, recovery plan context, and urgent-symptom escalation
-- Hybrid AI risk engine with explainable factors, wearable signals, medication adherence, camera signals, and predictive alerts
-- Wearable/device data module for heart rate, sleep, steps, stress, oxygen saturation, and HRV
-- Medication adherence tracking with taken/missed dose history and 7-day adherence score
-- Doctor portal for patient review, prescriptions, notes, consultation summaries, and appointments
-- Emergency SOS workflow with caregiver, doctor, and admin notifications plus location-ready payloads
-- Voice command parsing for symptom-log drafts
-- Mood/emotion text analysis for anxiety, fatigue, low mood, and physical distress signals
-- Smart recommendation engine for sleep, activity, medication, stress, and clinical escalation
-- Recovery timeline with health score trend, streaks, milestones, and improvement tracking
-- PDF health reports and CSV export for Excel
-- Admin analytics dashboard with risk distribution, recovery success rate, alert frequency, audit logs, and wearable sample count
-- PWA manifest, offline app shell cache, dark mode, large text toggle, and reduced-motion accessibility support
-- JWT-style access tokens, refresh tokens, audit logs, and provider-status notification records
-- Advanced Recovery Hub with digital twin profile, AI recovery score, recovery heatmap, smart habits, health journal, collaboration space, AI meal planner, smart goals, community support, secure medical vault, OCR prescription scanner, adaptive check-in, camera severity demo, recovery simulation, AI coach, knowledge recommendations, smart notifications, sleep analysis, WebSocket-ready live monitoring, and multi-language readiness for English/Hindi/Marathi
-- Admin AI health risk map for symptom clusters, risk trends, and alert distribution
+## 🎯 Problem Statement
 
-## API modules
+Patients recovering from surgery, chronic illness, or hospitalization often receive limited monitoring after leaving healthcare facilities. This can result in delayed intervention, poor medication adherence, unnoticed health deterioration, and fragmented communication between patients and healthcare providers.
 
-- `/api/assistant`
-- `/api/intelligence`
-- `/api/doctors`
-- `/api/reports`
-- `/api/advanced`
-- `/api/auth`
-- `/api/patients`
-- `/api/caregivers`
-- `/api/admin`
-- `/api/notifications`
-- `/api/risk`
+RecoverAI addresses these challenges by combining Artificial Intelligence, Full Stack Development, and Healthcare Analytics to provide continuous recovery monitoring, early risk detection, personalized recommendations, and real-time health insights.
 
-## External service notes
+---
 
-The project is integration-ready for OpenAI/Gemini, Google Fit, Apple Health, Fitbit, Twilio, Firebase Cloud Messaging, and WhatsApp providers. In this build, those flows run in deterministic local/dev mode so the app works without paid keys.
+# ✨ Key Features
 
-Real OTP email sending works after SMTP variables are configured. OTP codes are no longer returned to the browser. If SMTP is not configured, registration/password reset will ask you to configure email instead of showing a demo OTP.
+## 🤖 AI Recovery Intelligence
 
-- `SMTP_HOST`
-- `SMTP_PORT`
-- `SMTP_USERNAME`
-- `SMTP_PASSWORD`
-- `SMTP_FROM`
-- `SMTP_USE_TLS=true`
+- AI-powered Recovery Risk Prediction
+- Explainable AI Health Insights
+- Personalized Recovery Recommendations
+- Intelligent Recovery Score Generation
+- Predictive Health Alerts
 
-For a local-only demo, you can temporarily set `DEV_SHOW_OTP=true` to print OTP emails in the backend terminal. Do not use that setting for submission or production.
+---
 
-### OTP email setup
+## 🩺 Patient Health Monitoring
 
-1. Copy `backend/.env.example` to `backend/.env`.
-2. Fill your SMTP details. For Gmail, enable 2-Step Verification and create a Gmail App Password.
-3. Keep `DEV_SHOW_OTP=false` when you want real email delivery.
-4. Restart the backend after changing `.env`.
+- Daily Symptom Tracking
+- Wearable Device Data Integration
+- Medication Adherence Monitoring
+- Mood & Wellness Assessment
+- Recovery Timeline Visualization
+- Health Journal
+- Smart Habit Tracking
 
-Example Gmail values:
+---
 
-```env
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-SMTP_USERNAME=your_email@gmail.com
-SMTP_PASSWORD=your_gmail_app_password
-SMTP_FROM=your_email@gmail.com
-SMTP_USE_TLS=true
-DEV_SHOW_OTP=false
+## 👨‍⚕️ Doctor Portal
+
+- Patient Management
+- Prescription Management
+- Consultation Notes
+- Appointment Scheduling
+- Recovery Monitoring Dashboard
+- Health Report Review
+
+---
+
+## 👨‍👩‍👧 Caregiver Dashboard
+
+- Recovery Progress Tracking
+- Medication Reminders
+- Emergency SOS Notifications
+- Linked Patient Monitoring
+
+---
+
+## 📊 Smart Analytics
+
+- Recovery Health Trends
+- Recovery Heatmap
+- Risk Distribution Analysis
+- Health Score Dashboard
+- Interactive Analytics
+- Downloadable PDF Reports
+- CSV Export Support
+
+---
+
+## 🚨 Emergency & Smart Alerts
+
+- SOS Emergency Workflow
+- Smart Notifications
+- High Risk Alerts
+- Medication Reminder Alerts
+- Caregiver Notifications
+
+---
+
+## 🔒 Security Features
+
+- JWT Authentication
+- OTP Email Verification
+- Secure Login & Registration
+- Role-Based Access Control
+- Audit Logs
+- Protected REST APIs
+
+---
+
+# 🛠 Technology Stack
+
+## Frontend
+
+- React.js
+- HTML5
+- CSS3
+- JavaScript
+- Vite
+
+## Backend
+
+- Python
+- FastAPI
+- REST APIs
+- JWT Authentication
+
+## Database
+
+- PostgreSQL
+- SQLAlchemy
+
+## Artificial Intelligence
+
+- Machine Learning
+- Predictive Analytics
+- Explainable AI
+- Recommendation Engine
+
+## Tools
+
+- Git
+- GitHub
+- VS Code
+- Postman
+
+---
+
+# 👥 User Roles
+
+### 👤 Patient
+
+- Register & Login
+- Daily Health Check-ins
+- Symptom Logging
+- AI Recovery Assistant
+- Medication Tracker
+- Recovery Timeline
+- Download Health Reports
+
+---
+
+### 👨‍⚕️ Doctor
+
+- Patient Review
+- Consultation Notes
+- Prescription Management
+- Appointment Scheduling
+- Recovery Monitoring
+
+---
+
+### 👨‍👩‍👧 Caregiver
+
+- Linked Patient Monitoring
+- Recovery Updates
+- Medication Monitoring
+- Emergency Alerts
+
+---
+
+### 🛡 Administrator
+
+- User Management
+- Analytics Dashboard
+- System Monitoring
+- Alert Management
+- Platform Statistics
+
+---
+
+# 🔄 Project Workflow
+
+```text
+Patient Registration
+        │
+        ▼
+Daily Health Check-In
+        │
+        ▼
+Health Data Collection
+        │
+        ▼
+AI Recovery Risk Prediction
+        │
+        ▼
+Personalized Recovery Recommendations
+        │
+        ▼
+Doctor & Caregiver Review
+        │
+        ▼
+Recovery Reports & Analytics
 ```
 
-Database:
+---
 
-- Default: SQLite database at `backend/recoverai.db`
-- Optional: set `DATABASE_URL` to another SQLAlchemy connection string
+# 📂 Project Structure
 
-Security token settings:
+```text
+RecoverAI
+│
+├── backend
+│   ├── app
+│   ├── models
+│   ├── routes
+│   ├── services
+│   ├── schemas
+│   └── db
+│
+├── frontend
+│   ├── src
+│   ├── pages
+│   ├── components
+│   ├── assets
+│   └── services
+│
+├── screenshots
+│
+├── README.md
+├── LICENSE
+└── .gitignore
+```
 
-- `JWT_SECRET`
-- `ACCESS_TOKEN_MINUTES`
-- `REFRESH_TOKEN_DAYS`
+---
 
-## Run from scratch
+# 🚀 Installation
 
-### Backend
+## Clone Repository
 
-```powershell
-cd recoverai_authfix\backend
+```bash
+git clone https://github.com/YOUR_GITHUB_USERNAME/RecoverAI.git
+```
+
+---
+
+## Backend
+
+```bash
+cd backend
+
 python -m venv venv
-venv\Scripts\Activate.ps1
+
 pip install -r requirements.txt
+
 uvicorn app.main:app --reload
 ```
 
-### Frontend
+---
 
-```powershell
-cd recoverai_authfix\frontend
+## Frontend
+
+```bash
+cd frontend
+
 npm install
+
 npm run dev
 ```
 
-Open:
+---
 
-- Frontend: `http://localhost:5173`
-- Backend docs: `http://127.0.0.1:8000/docs`
+## Open Application
 
-## Demo flow
+Frontend
 
-1. Register a caregiver, doctor, admin, and patient.
-2. Login as patient and complete onboarding with caregiver and doctor assignment.
-3. Submit daily logs and optional wearable samples.
-4. Open AI Health Center for assistant chat, relapse prediction, XAI, medication adherence, SOS, reports, voice, and mood tools.
-5. Login as caregiver to see linked patients and emergency alerts.
-6. Login as doctor to add notes, prescriptions, and appointments.
-7. Login as admin to see analytics, alerts, notifications, and system KPIs.
+```
+http://localhost:5173
+```
+
+Backend API
+
+```
+http://127.0.0.1:8000/docs
+```
+
+---
+
+# 🖼 Screenshots
+
+| Feature | Preview |
+|----------|---------|
+| Home Page | *(Add Screenshot)* |
+| Login | *(Add Screenshot)* |
+| Patient Dashboard | *(Add Screenshot)* |
+| Doctor Dashboard | *(Add Screenshot)* |
+| AI Recovery Assistant | *(Add Screenshot)* |
+| Recovery Timeline | *(Add Screenshot)* |
+| Reports | *(Add Screenshot)* |
+
+---
+
+# 💡 Future Enhancements
+
+- Google Fit Integration
+- Apple Health Integration
+- Fitbit Integration
+- AI Voice Assistant
+- Video Consultation
+- Cloud Deployment
+- Docker Support
+- Multi-language Support
+- Explainable AI Dashboard
+- Real-Time Wearable Monitoring
+
+---
+
+# 🎯 Applications
+
+- Hospital Recovery Monitoring
+- Home Healthcare
+- Telemedicine Platforms
+- Elderly Care
+- Rehabilitation Centers
+- Chronic Disease Monitoring
+- Smart Healthcare Systems
+
+---
+
+# 👩‍💻 Author
+
+**Jyoti Sahu**
+
+Computer Engineering Student
+
+Artificial Intelligence • Machine Learning • Full Stack Development
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
+
+Feedback and suggestions are always welcome!
