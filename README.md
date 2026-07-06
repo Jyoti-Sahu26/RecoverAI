@@ -277,17 +277,18 @@ http://127.0.0.1:8000/docs
 
 ---
 
-# 🖼 Screenshots
+# 📝 Descriptions
 
-| Feature | Preview |
-|----------|---------|
-| Home Page | *(Add Screenshot)* |
-| Login | *(Add Screenshot)* |
-| Patient Dashboard | *(Add Screenshot)* |
-| Doctor Dashboard | *(Add Screenshot)* |
-| AI Recovery Assistant | *(Add Screenshot)* |
-| Recovery Timeline | *(Add Screenshot)* |
-| Reports | *(Add Screenshot)* |
+| Feature | Description |
+|----------|-------------|
+| 🏠 Home Page | Modern landing page introducing RecoverAI and its AI-powered healthcare services. |
+| 🔐 Login & Registration | Secure user authentication with role-based access for patients, doctors, caregivers, and administrators. |
+| 👤 Patient Dashboard | Personalized dashboard displaying health status, recovery progress, medication reminders, and daily check-ins. |
+| 👨‍⚕️ Doctor Dashboard | Monitor patient recovery, manage consultations, prescriptions, and appointments from a centralized dashboard. |
+| 👨‍👩‍👧 Caregiver Dashboard | Track patient progress, receive emergency alerts, and monitor medication adherence in real time. |
+| 🤖 AI Recovery Assistant | AI-powered assistant providing recovery insights, personalized recommendations, and health risk analysis. |
+| 📈 Recovery Analytics | Interactive visualizations of recovery trends, health scores, and AI-generated performance insights. |
+| 📄 Health Reports | Downloadable PDF reports summarizing patient recovery, medication history, and AI assessments. |
 
 ---
 
